@@ -25,11 +25,11 @@ jobs:
           node-version: '20.x'
 
       - name: Install backend dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ./backend
 
       - name: Install client dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
         working-directory: ./client
 
       - name: Build client

@@ -5,8 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon --env-file .env index.js",
+    "start": "node index.js",
+    "dev": "nodemon --env-file .env index.js",
+    "build": "echo 'No build step required for backend'",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   },
   "keywords": [],
   "author": "",
